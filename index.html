@@ -7,6 +7,8 @@
 </head>
 <body>
     <img src="#" alt="gif">
+    <br />
+    <button>New GIF</button>
     <script>
         const image = document.querySelector('img');
 
@@ -16,7 +18,8 @@
             image.src = Data.data.images.original.url;
         }
 
-        getCats();
+        const newGif = document.querySelector('button');
+        newGif.addEventListener('click', getCats);
 
     </script>
 </body>
