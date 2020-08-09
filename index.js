@@ -3,12 +3,18 @@ function getNewGif() {
     getGifs(searchText);
 }
 async function getGifs(searchText) {
-    console.log(searchText);
-    const response = await fetch(`https://api.giphy.com/v1/gifs/translate?api_key=EpfyNb2OrFNqvry00bN6vGPqpS57oWhs&s=${searchText}`, {mode: 'cors'});
-    const Data = await response.json();
-    image.src = Data.data.images.original.url;
+    try {
+        console.log(searchText);
+        const response = await fetch(`https://api.giphy.com/v1/gifs/translate?api_key=EpfyNb2OrFNqvry00bN6vGPqpS57oWhs&s=${searchText}`, {mode: 'cors'});
+        const Data = await response.json();
+        image.src = Data.data.images.original.url;
+    } catch(error) {
+        image.src = 'hanuman.png';
+        console.log(error);
+    }
 }
 
+// main starts here
 const image = document.querySelector('img');
 
 const form = document.querySelector('form');
