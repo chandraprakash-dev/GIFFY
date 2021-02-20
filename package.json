@@ -1,0 +1,26 @@
+{
+  "name": "giffy",
+  "version": "1.0.0",
+  "description": "Live demo: https://chandraprakash-dev.github.io/GIFFY/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeSurfer3022/GIFFY.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodeSurfer3022/GIFFY/issues"
+  },
+  "homepage": "https://github.com/CodeSurfer3022/GIFFY#readme",
+  "devDependencies": {
+    "eslint": "^7.20.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-react": "^7.22.0",
+    "prettier": "2.2.1"
+  }
+}
