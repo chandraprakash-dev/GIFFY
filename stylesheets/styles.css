@@ -1,39 +1,32 @@
-header {
-  height: 100px;
-  font-family: "Comic Sans MS", sans-serif;
+#container {
+  height: 600px;
+  width: 600px;
   background-color: rebeccapurple;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header h1{
+  font-family: "Comic Sans MS", sans-serif;
+  font-size: 50px;
+  text-align: center;
   color: white;
-  font-size: xx-large;
+}
+
+main {
+  margin-top: 10px;
+  position: relative;
   text-align: center;
 }
 
 nav {
   height: 50px;
-}
-
-main {
-  height: 600px;
-  position: relative;
-  text-align: center;
-}
-
-#container {
-  height: 400px;
-  width: 500px;
-  position: relative;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, -10%);
+  margin-bottom: 10px;
 }
 
 #gifContainer {
-  height: 400px;
+  height: 300px;
   overflow: hidden;
-}
-
-footer {
-  background-color: antiquewhite;
-  position: absolute;
-  bottom: 0;
-  height: 100px;
 }
